@@ -4,7 +4,7 @@ module CapitalizeNames
 
     HYPHEN = /(\s*-\s*)/
 
-    MC = /^Mc(\w)(?=\w)/i 
+    MC = /^Mc(\w)(?=\w)/i
     MAC = /^Mac(\w)(?=\w)/i
     O_APOSTROPHE = /^O'(\w)(?=\w)/i
 
@@ -70,7 +70,6 @@ module CapitalizeNames
           w.mb_chars.capitalize.to_str 
         }.map{ |w|
           w.gsub(MC) { "Mc#{$1.upcase}" }\
-           .gsub(MAC) { "Mac#{$1.upcase}" }\
            .gsub(O_APOSTROPHE) { "O'#{$1.upcase}" }
         }
 
