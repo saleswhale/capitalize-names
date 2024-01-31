@@ -6,7 +6,7 @@ module CapitalizeNames
     "(III)",
     "IV",
     "(IV)",
-    "VI",
+    # "VI", this is a valid vietnamese name
     "(VI)",
     "VII",
     "(VII)",
