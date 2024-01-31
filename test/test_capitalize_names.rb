@@ -26,7 +26,7 @@ class CapitalizeNamesTest < Minitest::Test
     assert_equal "-Gleny Mejia-", CapitalizeNames.capitalize("-Gleny Mejia-")
     assert_equal "Cinnamon Ballantye - Clarke", CapitalizeNames.capitalize("Cinnamon Ballantye - Clarke")
     assert_equal " - Cinnamon Ballantye - Clarke-van Buren- ", CapitalizeNames.capitalize(" - CinnAMon BaLLantye - Clarke-VAN BUREN- ")
-    assert_equal "Vi", CapitalizeNames.capitalize("vi") # single suffix shouldn't be all-caps
+    assert_equal "Vi", CapitalizeNames.capitalize("vi") # a suffix-like but also a valid vietnamese name
   end
 
   def test_invalid_name
